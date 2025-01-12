@@ -17,7 +17,7 @@ body {
        
        background-position: center;
     background-image: url(img/BACKGROUND\ \(1\).webp);
-    font-family: 'Arial', sans-serif;
+    font-family: "Inter", serif;
     line-height: 1.6;
 }
 
@@ -154,7 +154,7 @@ section {
 }
 
 .card {
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     border: 1px solid #d64a24;
     padding: 2rem;
@@ -179,7 +179,7 @@ section {
 }
 
 .card-button {
-    color: #fff;
+    color: #1f1f1f;
     background-color: #d64a24;
     text-decoration: none;
     padding: 0.75rem 1.5rem;
@@ -282,6 +282,7 @@ section {
 }
 
 .parallax-section {
+    margin-top: 200px;
     min-height: auto;
     /* Efecto Parallax */
     background-image: url('img/paralax.webp');
@@ -291,7 +292,7 @@ section {
     background-size: cover;
     
     /* Dimensiones */
-    height: 60vh;
+    height: 72vh;
     width: 100%;
     
     /* Overlay para mejor contraste */
@@ -324,7 +325,7 @@ section {
     /* Estilos del texto */
     color: #fff;
     font-size: 4rem;
-    font-family: 'Playfair Display', serif; /* O una fuente script similar */
+    font-family: "The Nautigal", serif;
     line-height: 1.2;
     font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Academia de Danza</title>
 
@@ -99,7 +102,54 @@
     </section>
 
     <section id="contacto">
-        <h2>Contacto</h2>
+        <div class="container">
+            <div class="header">
+                <div class="form-container">
+                    <h4>Dejanos tu consulta</h4>
+                    <form id="contactForm" action="https://formspree.io/f/xeojqojz" method="POST">
+                        <div class="form-step active">
+                            <textarea name="consulta" placeholder=""></textarea>
+                            <span class="error-message">El campo de consulta no debe estar vacío.</span>
+                            <button type="button" onclick="nextStep(1)">Siguiente</button>
+                        </div>
+                        <div class="form-step">
+                            <input type="text" name="telefono" placeholder="Ingresa tu teléfono">
+                            <span class="error-message">El campo de teléfono solo debe contener números.</span>
+                            <button type="button" onclick="nextStep(2)">Siguiente</button>
+                        </div>
+                        <div class="form-step">
+                            <input type="email" name="email" placeholder="Ingresa tu email">
+                            <span class="error-message">Por favor, ingresa un correo electrónico válido.</span>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <img src="img/pulpo.png" alt="Logo" class="logo-form" width="100">
+            </div>
+            <span class="links-container">
+                <h2>OCTOPUS</h2>
+                <div class="links">
+                    <a href="#">Inicio</a>
+                    <a href="#sitios-web">Servicios</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#nosotros">Nosotros</a>
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.instagram.com/octopus_apps/" ><img
+                            src="img/Instagram.png"></a>
+
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61554724986069"alt="Instagram"
+                        width="64"><img src="img/Facebook.png" alt="Facebook" width="64"></a>
+
+                    <a target="_blank" href="https://www.linkedin.com/in/octopus-soluciones-digitales-b1a9342a5/"><img
+                            src="img/LinkedIn.png" alt="LinkedIn" width="64"></a>
+                </div>
+            </span>
+        </div>
+
+        <div class="popup" id="popup">
+            ¡Gracias por contactarnos! Responderemos tu consulta a la brevedad. Gracias por elegir Octopus.
+        </div>
     </section>
 
 <script src="script.js"></script>
