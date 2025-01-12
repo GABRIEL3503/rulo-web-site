@@ -324,7 +324,7 @@ section {
 .parallax-text {
     /* Estilos del texto */
     color: #fff;
-    font-size: 4rem;
+    font-size: 12rem;
     font-family: "The Nautigal", serif;
     line-height: 1.2;
     font-weight: 400;
@@ -339,13 +339,13 @@ section {
     }
 
     .parallax-text {
-        font-size: 3rem;
+        font-size: 6rem;
     }
 }
 
 @media (max-width: 480px) {
     .parallax-text {
-        font-size: 2.5rem;
+        font-size: 7.5rem;
     }
 }
 
@@ -437,6 +437,7 @@ section {
     }
 }
 .form-container {
+    color: #dbdbdb;
     position: relative;
     width: 720px;
     height: 320px;
