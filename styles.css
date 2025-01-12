@@ -511,6 +511,14 @@ textarea {
     width: auto;
     resize: vertical;
 }
+.header{
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+}
+.header img{
+    width: 400px;
+}
 
 @media (max-width: 768px) {
     .header{
