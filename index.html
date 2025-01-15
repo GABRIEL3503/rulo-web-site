@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>    
-  <link rel="stylesheet" href="styles.css">
+        href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=The+Nautigal:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
 
     <title>Academia de Danza</title>
 
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
@@ -39,12 +41,12 @@
             </a>
         </div>
     </section>
-    
+
 
     <section id="clases" class="clases-section">
         <div class="clases-container">
             <h2 class="clases-title">Sumate a clases virtuales<br>desde donde estés.</h2>
-            
+
             <div class="cards-container">
                 <!-- Card 1 -->
                 <div class="card">
@@ -52,14 +54,14 @@
                     <p class="card-duration">Duración 30 horas.</p>
                     <a href="#" class="card-button">Más info<span class="arrow">→</span></a>
                 </div>
-    
+
                 <!-- Card 2 -->
                 <div class="card">
                     <h3 class="card-title">DANZAS<br>ARGENTINAS</h3>
                     <p class="card-duration">Duración 50 horas.</p>
                     <a href="#" class="card-button">Ver clases<span class="arrow">→</span></a>
                 </div>
-    
+
                 <!-- Card 3 -->
                 <div class="card">
                     <h3 class="card-title">DEL SUR<br>AL MUNDO</h3>
@@ -78,117 +80,183 @@
         <div class="sobre-mi-container">
             <div class="sobre-mi-content">
                 <h2 class="sobre-mi-title">Sobre mí</h2>
-                
+
                 <div class="sobre-mi-text">
                     <p class="primary-text">
                         Bailarín <span class="highlight">profesional Argentino</span>, Campeón Nacional de Malambo,
                         <span class="highlight">Director del Espacio de formación en danza Kural</span>.
                     </p>
-    
+
                     <p class="secondary-text" id="texto-expandible">
                         Oriundo de la Patagonia Argentina, luego de consagrarse
                         en los más grandes escenarios, ha recorrido el país
                         y el mundo formándose y transmitiendo sus vivencias.
                     </p>
-    
+
                     <div class="texto-oculto" id="mas-texto">
-                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit ducimus laudantium, officia eius perspiciatis libero, ratione fugiat iure id tenetur minus inventore numquam commodi illo, beatae provident eveniet architecto. 
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit ducimus laudantium,
+                            officia eius perspiciatis libero, ratione fugiat iure id tenetur minus inventore numquam
+                            commodi illo, beatae provident eveniet architecto.
                         </p>
                     </div>
-    
+
                     <button class="read-more" id="leer-mas">
                         Seguir leyendo...
                     </button>
                 </div>
             </div>
-            
+
             <div class="sobre-mi-image">
                 <img src="img/sobremi.webp" alt="Bailarín en acción">
             </div>
         </div>
     </section>
-   
+
 
     <section id="linea-de-tiempo">
         <div class="container">
             <h2>Trayectoria</h2>
             <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-content">
-                  <h3>Campeón Nacional de Malambo</h3>
-                  <p>Logrado en Langreo 2019</p>
-                  <img src="img/trofeo.jpg" alt="Campeón Nacional de Malambo">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Campeón Nacional de Malambo</h3>
+                        <p>Logrado en Langreo 2019</p>
+                        <img src="img/trofeo.jpg" alt="Campeón Nacional de Malambo">
+                    </div>
                 </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-content">
-                  <h3>Subcampeón Nacional de Malambo</h3>
-                  <p>Festival de la Tierra, 2020</p>
-                  <img src="img/clase.jpeg" alt="Subcampeón Nacional de Malambo">
+                <div class="timeline-item">
+                    <div id="time-text" class="timeline-content">
+                        <h3>Campeón Nacional de Malambo</h3>
+                        <p>Logrado en Langreo 2019</p>
+                    </div>
                 </div>
-              </div>
-              <div class="timeline-item">
-                <div class="timeline-content">
-                  <h3>Ganador Solista de Malambo</h3>
-                  <p>Carnavales 2015</p>
-                  <img src="img/cielo.jpg" alt="Ganador Solista de Malambo">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Subcampeón Nacional de Malambo</h3>
+                        <p>Festival de la Tierra, 2020</p>
+                        <img src="img/clase.jpeg" alt="Subcampeón Nacional de Malambo">
+                    </div>
                 </div>
-              </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Ganador Solista de Malambo</h3>
+                        <p>Carnavales 2015</p>
+                        <img src="img/cielo.jpg" alt="Ganador Solista de Malambo">
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div id="time-text" class="timeline-content">
+                        <h3>Campeón Nacional de Malambo</h3>
+                        <p>Logrado en Langreo 2019</p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </section>
 
-   
-<section id="galeria">
-    <swiper-container showsPagination={false} class="mySwiper" pagination="true" pagination-clickable="false" navigation="false" space-between="30"
-    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
-  </swiper-container>
-</section>
+
+    <section id="galeria">
+        <swiper-container showsPagination={false} class="mySwiper" pagination="true" pagination-clickable="false"
+            navigation="false" space-between="30" centered-slides="true" autoplay-delay="2500"
+            autoplay-disable-on-interaction="false">
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+            <swiper-slide><img src="img/cielo.jpg" alt=""></swiper-slide>
+        </swiper-container>
+    </section>
     <section id="contacto">
         <div class="container">
             <div class="header">
                 <div class="form-container">
-                    <h4>Dejanos tu consulta</h4>
+                    <h4>Hacé tu consulta o propuesta</h4>
                     <form id="contactForm" action="https://formspree.io/f/xeojqojz" method="POST">
                         <div class="form-step active">
                             <textarea name="consulta" placeholder=""></textarea>
-                            <span class="error-message">El campo de consulta no debe estar vacío.</span>
-                            <button type="button" onclick="nextStep(1)">Siguiente</button>
+                            <span class="error-message"></span>
+                            <button class="cta-button" type="button" onclick="nextStep(1)">SIGUIENTE<span>→</span>
+                            </button>
                         </div>
                         <div class="form-step">
                             <input type="text" name="telefono" placeholder="Ingresa tu teléfono">
                             <span class="error-message">El campo de teléfono solo debe contener números.</span>
-                            <button type="button" onclick="nextStep(2)">Siguiente</button>
+                            <button class="cta-button" type="button" onclick="nextStep(2)">Siguiente</button>
                         </div>
                         <div class="form-step">
                             <input type="email" name="email" placeholder="Ingresa tu email">
                             <span class="error-message">Por favor, ingresa un correo electrónico válido.</span>
-                            <button type="submit">Enviar</button>
+                            <button class="cta-button" type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
                 <img src="img/IMG_20220620_235051-removebg-preview.png" alt="Logo" class="logo-form" width="100">
             </div>
-           
-        </div>
 
+        </div>
+    
         <div class="popup" id="popup">
             ¡Gracias por contactarnos! Responderemos tu consulta a la brevedad. Gracias por elegir Octopus.
         </div>
     </section>
+    <section id="footer">
+        <div class="footer-section">
+            <div class="logo-slogan-footer">
+                <p>Rulo Hernandez</p>
+            </div>
 
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            <div class="footer-links">
+                <span class="phone-footer">
+                    <svg class="phone-footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="rgba(255,255,255,1)">
+                        <path
+                            d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+                        </path>
+                    </svg>
+                    <a href="tel:+542994049192">+54 2994049192</a>
+                </span>
+                <span class="email-footer">
+                    <svg class="email-footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="rgba(255,255,255,1)">
+                        <path
+                            d="M2 5.5V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5ZM0 10H5V12H0V10ZM0 15H8V17H0V15Z">
+                        </path>
+                    </svg>
+                    <a href="mailto:gestioneslimay@gmail.com">rulo.h@gmail.com</a>
+                </span>
+            </div>
+
+            <div class="social-links">
+                <span><a href="https://www.instagram.com/gestioneslimay/" class="instagram-footer">
+                        <svg class="email-footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="rgba(255,255,255,1)">
+                            <path
+                                d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                            </path>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="pie">
+            <div class="desarrollado-por">
+                <p class="text-desarollado-por">Desarrollado por</p>
+                <a href="https://octopuswebdesign.com.ar/">OCTOPUS Soluciones digitales</a>
+            </div>
+
+            <div>
+                <p class="copyright">©2024. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 </body>
+
 </html>
