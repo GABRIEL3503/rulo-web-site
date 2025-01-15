@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Academia de Danza</title>
 
@@ -24,13 +24,18 @@
     </nav>
 
     <section id="inicio" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="video/hero.mp4" type="video/mp4">
+            <!-- Mensaje alternativo para navegadores sin soporte -->
+            Tu navegador no soporta videos HTML5.
+        </video>
         <div class="hero-content">
- 
             <a href="#contacto" class="cta-button">
-                        CONTACTÁME<span>→</span>
+                CONTACTÁME<span>→</span>
             </a>
         </div>
     </section>
+    
 
     <section id="clases" class="clases-section">
         <div class="clases-container">
@@ -60,7 +65,11 @@
             </div>
         </div>
     </section>
-
+    <section class="parallax-section">
+        <div class="parallax-content">
+            <h2 class="parallax-text"> <span class="special-text">Rulo</span><br>Hernandez</h2>
+        </div>
+    </section>
     <section id="sobre-mi" class="sobre-mi-section">
         <div class="sobre-mi-container">
             <div class="sobre-mi-content">
@@ -95,10 +104,35 @@
             </div>
         </div>
     </section>
-    <section class="parallax-section">
-        <div class="parallax-content">
-            <h2 class="parallax-text">Rulo<br>Hernandez</h2>
-        </div>
+   
+
+    <section id="linea-de-tiempo">
+        <div class="container">
+            <h2>Trayectoria</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h3>Campeón Nacional de Malambo</h3>
+                  <p>Logrado en Langreo 2019</p>
+                  <img src="/img/trofeo.jpg" alt="Campeón Nacional de Malambo">
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h3>Subcampeón Nacional de Malambo</h3>
+                  <p>Festival de la Tierra, 2020</p>
+                  <img src="/img/clase.jpeg" alt="Subcampeón Nacional de Malambo">
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h3>Ganador Solista de Malambo</h3>
+                  <p>Carnavales 2015</p>
+                  <img src="/img/cielo.jpg" alt="Ganador Solista de Malambo">
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <section id="contacto">

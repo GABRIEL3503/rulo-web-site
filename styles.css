@@ -73,8 +73,9 @@ body {
     font-size: 1.5rem;
 }
 
-/* Hero Section */
+/* Asegura que el video cubra toda el área de la sección */
 .hero {
+    position: relative;
     height: 100vh;
     background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 2%)), url(img/hero.webp);
     background-size: cover;
@@ -85,20 +86,23 @@ body {
     text-align: center;
     color: white;
     padding: 1rem;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .hero-content {
+    position: relative;
     max-width: 800px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    z-index: 1;
 }
 
 .cta-button {
@@ -116,6 +120,7 @@ body {
 .cta-button:hover {
     background-color: #ea580c;
 }
+
 
 /* Secciones */
 section {
@@ -324,8 +329,8 @@ section {
 .parallax-text {
     /* Estilos del texto */
     color: #fff;
-    font-size: 12rem;
-    font-family: "The Nautigal", serif;
+    font-size: 7rem;
+    font-family: "Bilbo Swash Caps", serif;
     line-height: 1.2;
     font-weight: 400;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -333,9 +338,11 @@ section {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .special-text{
+        font-size: 72px;
+    }
     .parallax-section {
-        /* En móviles, desactivamos el fixed para mejor rendimiento */
-        height: 40vh;
+background-position: right;        height: 40vh;
     }
 
     .parallax-text {
@@ -345,7 +352,9 @@ section {
 
 @media (max-width: 480px) {
     .parallax-text {
-        font-size: 7.5rem;
+        letter-spacing:2px;
+        line-height: 80px;
+        font-size: 4.5rem;
     }
 }
 
@@ -442,7 +451,6 @@ section {
     width: 720px;
     height: 420px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
     padding: 36px 18px 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -470,7 +478,6 @@ section {
     background-color: #d64a24;
     color: #292929;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -507,7 +514,6 @@ textarea {
     padding: 12px 12px;
     margin-bottom: 24px;
     min-height: 160px;
-    border-radius: 8px;
     width: auto;
     resize: vertical;
 }
@@ -547,3 +553,167 @@ height: 400px;
         font-family: "Nunito Sans", sans-serif;
         font-size: 16px;
     }}
+
+    :root {
+        --primary-color: #d64a24;
+        --secondary-color: #4a5568;
+        --bg-color: #1a202c;
+        --card-bg: #2d3748;
+      }
+      .timeline {
+        position: relative;
+        padding: 2rem 0;
+    }
+    
+    /* Línea central vertical */
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background-color: var(--primary-color);
+        transform: translateX(-50%);
+    }
+    
+    /* Container de cada item */
+    .timeline-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .timeline-item.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Alternar dirección para items pares */
+    .timeline-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    /* Punto en la línea central */
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1rem;
+        height: 4px;
+        background-color: var(--primary-color);
+        transform: translate(-50%, -50%);
+    }
+    
+    /* Solo modificamos el contenido del timeline-content para el nuevo estilo visual */
+    .timeline-content {
+        position: relative;
+        width: 45%;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: transparent;
+        padding: 0; /* Eliminamos el padding que tenía antes */
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-right: 2rem;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content {
+        margin-left: 2rem;
+    }
+    
+    /* Estilo de la imagen */
+    .timeline-content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0; /* Eliminamos el margin que tenía antes */
+        transition: transform 0.3s ease;
+    }
+    
+    /* Overlay oscuro */
+    .timeline-content::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
+    /* Estilos del texto */
+    .timeline-content h3 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: white;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-100%);
+        padding: 0 20px;
+        margin: 0;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+    }
+    
+    .timeline-content p {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: white;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(0);
+        padding: 0 20px;
+        margin: 0;
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+    
+    /* Efectos hover */
+    .timeline-content:hover img {
+        transform: scale(1.05);
+    }
+    
+    /* Mantenemos el responsive existente */
+    @media (max-width: 768px) {
+        .timeline::before {
+            left: 1rem;
+        }
+    
+        .timeline-item {
+            flex-direction: row-reverse;
+            margin-left: 1rem;
+        }
+    
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    
+        .timeline-item::before {
+            left: 1rem;
+        }
+    
+        .timeline-content {
+            width: calc(100% - 3rem);
+            height: 300px;
+        }
+    
+        .timeline-content h3 {
+            font-size: 1.5rem;
+        }
+    }
+    
+  
